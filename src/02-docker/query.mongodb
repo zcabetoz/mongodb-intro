@@ -1,0 +1,2 @@
+use('payall')
+db.User.find({username:'nayarit'})

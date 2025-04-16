@@ -1,0 +1,9 @@
+use("platzi_store")
+
+db.inventory.updateOne({ _id: 4 }, {
+    $pull: {
+        tags: "headphone"
+    }
+})
+
+db.inventory.find()

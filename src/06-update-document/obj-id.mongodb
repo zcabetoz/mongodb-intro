@@ -1,0 +1,15 @@
+use('platzi_store')
+
+db.products.updateOne(
+    //query
+    {_id: ObjectId('67f969e716ec857bfc203507')},
+    //change => operators
+    {
+        // se usa para variables numericas y aumenta o suma el valor al de base de datos
+        $inc: {
+            price: 100,
+        }
+    }
+)
+
+db.products.find()
