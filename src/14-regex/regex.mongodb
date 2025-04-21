@@ -1,0 +1,10 @@
+use("platzi_store")
+//line$ finalice en line
+//db.inventory.find({ "item.description": { $regex: /$single/i } })
+
+//^single inicie en single 
+//db.inventory.find({ "item.description": { $regex: /^single/i } })
+
+//m busquedas en multilines
+
+db.inventory.find({ "item.description": { $regex: /^s/im } })
